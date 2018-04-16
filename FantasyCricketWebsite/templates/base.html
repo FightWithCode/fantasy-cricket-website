@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FanCricket : Let the Fan play Cricket.</title>
+    <link rel="stylesheet" type="text/css" href="{% static "main.css" %}">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static "bootstrap.css" %}">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  -->
+    </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="myNav">
+      <div class="container">
+        <div class="navbar-header">
+          <button style="background-color:rgb(54, 196, 4);" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#dataOfHeaderToCollapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar" style="background-color:#222;"></span>
+            <span class="icon-bar" style="background-color:#222;"></span>
+            <span class="icon-bar" style="background-color:#222;"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="FanCricket">FanCricket</a>
+        </div>
+    <div class="collapse navbar-collapse" id="dataOfHeaderToCollapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#" class="blackColor" id="FanCricket">Home <span class="sr-only">(current)</span></a></li>
+        <li><a href="#" class="blackColor" id="FanCricket">Refer and Earn!</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#" class="blackColor" id="FanCricket">Notofications</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle blackColor" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="FanCricket">My Account <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Add Fund</a></li>
+            <li><a href="#">Account</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+      </div>
+    </nav><br><br><br><br>
+    <div class="container" class="row">
+      <div class="col-sm-6" class="row">
+        <div class="col-sm-12" class="newContainer" id="matchDetails">
+          <h3 style="text-align:center;">India VS Australia</h3><hr>
+          <center><img src="{% static "images/ind vs aus.jpg" %}" alt="Uh! Oh! Image Not Found." class="img-responsive center-block"></center>
+          <h4 style="text-align:center;">One Day Internationals, At Firoz Sah Kotla Stadium</h4>
+          <h4 style="text-align:center;">Starts in <span id="matchTimeOne" style="color:rgb(54, 196, 4);"></span></h4>
+        </div>
+      </div>
+      <div class="col-sm-6" class="row">
+        <div class="col-sm-12" class="newContainer" id="matchDetails">
+          <h3 style="text-align:center;">India VS Australia</h3><hr>
+          <center><img src="{% static "images/ind vs aus.jpg" %}" alt="Uh! Oh! Image Not Found." class="img-responsive center-block"></center>
+          <h4 style="text-align:center;">One Day Internationals, At Firoz Sah Kotla Stadium</h4>
+          <h4 style="text-align:center;">Starts in <span id="matchTimeTwo" style="color:rgb(54, 196, 4);"></span></h4>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        &nbsp;<p></p>
+      </div>
+      <div class="col-sm-6" class="row">
+        <div class="col-sm-12" class="newContainer" id="matchDetails">
+          <h3 style="text-align:center;">India VS Australia</h3><hr>
+          <center><img src="{% static "images/ind vs aus.jpg" %}" alt="Uh! Oh! Image Not Found." class="img-responsive center-block"></center>
+          <h4 style="text-align:center;">One Day Internationals, At Firoz Sah Kotla Stadium</h4>
+          <h4 style="text-align:center;">Starts in <span id="matchTimeThree" style="color:rgb(54, 196, 4);"></span></h4>
+        </div>
+      </div>
+      <div class="col-sm-6" class="row">
+        <div class="col-sm-12" class="newContainer" id="matchDetails">
+          <h3 style="text-align:center;">India VS Australia</h3><hr>
+          <center><img src="{% static "images/ind vs aus.jpg" %}" alt="Uh! Oh! Image Not Found." class="img-responsive center-block"></center>
+          <h4 style="text-align:center;">One Day Internationals, At Firoz Sah Kotla Stadium</h4>
+          <h4 style="text-align:center;">Starts in <span id="matchTimeFour" style="color:rgb(54, 196, 4);"></span></h4>
+        </div>
+      </div>
+    </div>
+    {% block other_page_content %}
+
+    {% endblock%}
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h2 class="logo"><a href="#"> LOGO </a></h2>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Get started</h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Sign up</a></li>
+                        <li><a href="#">Downloads</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>About us</h5>
+                    <ul>
+                        <li><a href="#">Company Information</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Reviews</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Help desk</a></li>
+                        <li><a href="#">Forums</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <button type="button" class="btn btn-default">Contact us</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2018 FanCricket Pvt. Ltd.</p>
+        </div>
+    </footer>
+    <script src="http://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      var deadlineOne = new Date("April 15, 2018 15:00:00").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadlineOne - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("matchTimeOne").innerHTML = days + " Days "
+      + hours + " Hrs " + minutes + " Mins " + seconds + " Secs ";
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById("matchTimeOne").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      var deadlineTwo = new Date("April 16, 2018 15:00:00").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadlineTwo - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("matchTimeTwo").innerHTML = days + " Days "
+      + hours + " Hrs " + minutes + " Mins " + seconds + " Secs ";
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById("matchTimeTwo").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      var deadlineThree = new Date("April 17, 2018 15:00:00").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadlineThree - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("matchTimeThree").innerHTML = days + " Days "
+      + hours + " Hrs " + minutes + " Mins " + seconds + " Secs ";
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById("matchTimeThree").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+      var deadlineFour = new Date("April 18, 2018 15:00:00").getTime();
+      var x = setInterval(function() {
+      var now = new Date().getTime();
+      var t = deadlineFour - now;
+      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+      var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((t % (1000 * 60)) / 1000);
+      document.getElementById("matchTimeFour").innerHTML = days + " Days "
+      + hours + " Hrs " + minutes + " Mins " + seconds + " Secs ";
+          if (t < 0) {
+              clearInterval(x);
+              document.getElementById("matchTimeFour").innerHTML = "EXPIRED";
+          }
+      }, 1000);
+</script>
+  </body>
+</html>
